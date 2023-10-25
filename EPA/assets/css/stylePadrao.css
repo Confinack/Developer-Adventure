@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Arial", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #C183FF;
+
+    display: flex;
+}
+
+header {
+    height: 100%;
+    width: 24.6%;
+    background-color: #151515;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    height: 218px;
+    width: 218px;
+    background-color: #dbbd10;
+    border: 5px solid black;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+header > nav {
+    height: 50%;
+    width: 80%;
+}
+
+header ul {
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+}
+
+header li {
+    height: 25%;
+}
+
+header a, header li {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    cursor: pointer;
+}
+
+header a {
+    overflow: hidden;
+    height: 100%;
+    background-color: white;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+header a::before {
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgb(236, 159, 255), #C183FF);
+    transition: 0.25s;
+    z-index: -1;
+}
+
+header li:hover a::before {
+    width: 100%;
+}
+
+#money {
+    font-size: 1.5rem;
+    color: white;
+}
+
+audio {
+    display: none;
+}
+
+.videoPlayer {
+    position: fixed;
+    height: 64px;
+    width: 64px;
+    background-color: white;
+    background-image: URL("../img/mudo.png");
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+    right: 1%;
+    bottom: 1%;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.backgroundGaleria {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+    z-index: 3;
+}
+
+.galeria {
+    height: 50%;
+    width: 30%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.galeria > img {
+    height: 25%;
+    width: 25%;
+    background-color: #dbbd10;
+    border: 5px solid black;
+    border-radius: 8px;
+    
+    cursor: pointer;
+}

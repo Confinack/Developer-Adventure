@@ -1,0 +1,47 @@
+main {
+    height: 100%;
+    width: calc(100% - 24.6%);
+    padding: 48px 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;    
+}
+
+div {
+    height: 25%;
+    width: 60%;
+    border-radius: 8px;
+    padding: 0 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo {
+    background-color: rgb(255, 116, 116);
+    border: 5px solid red;
+}
+
+.desenvolvedor {
+    background-color: rgb(255, 121, 255);
+    border: 5px solid rgb(255, 0, 255);
+}
+
+.artista {
+    background-color: rgb(179, 255, 179);
+    border: 5px solid rgb(0, 255, 0);
+}
+
+.layout {
+    background-color: rgb(255, 255, 175);
+    border: 5px solid yellow;
+}
+
+.inspiracao {
+    background-color: rgb(132, 132, 255);
+    border: 5px solid blue;
+}
